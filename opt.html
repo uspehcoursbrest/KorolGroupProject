@@ -7,36 +7,36 @@
 <body>
 <form action="#">
     <div class="opt">
+        <div class="name">
+            <label for="name">Ваше имя</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="phone">
+            <label for="phone">Телефон</label>
+            <input type="text" name="phone" id="phone">
+        </div>
+        <div class="e-mail">
+            <label for="e-mail">E-mail</label>
+            <input type="text" name="e-mail" id="e-mail">
+        </div>
+        <div class="city">
+            <label for="city">Город</label>
+            <input type="text" name="city" id="city">
+        </div>
         <ul>
             <li>
-                <label for="name">Ваше имя</label>
-                <input type="text" name="name" id="name">
+                <label for="org">организация</label>
+                <input type="radio" name="org" id="org">
             </li>
             <li>
-                <label for="phone">Телефон</label>
-                <input type="text" name="phone" id="phone">
-            </li>
-            <li>
-                <label for="e-mail">E-mail</label>
-                <input type="text" name="e-mail" id="e-mail">
-            </li>
-            <li>
-                <label for="city">Город</label>
-                <input type="text" name="city" id="city">
+                <label for="person">физическое лицо</label>
+                <input type="radio" name="person" id="person">
             </li>
         </ul>
-        <ul>
-            <li>
-                <label for="org" name="org" id="org">организация</label>
-                <input type="radio">
-            </li>
-            <li>
-                <label for="person" name="person" id="person">физическое лицо</label>
-                <input type="radio">
-            </li>
-        </ul>
-        <label for="message">Дополнительная информация</label>
-        <textarea name="message" id="message" placeholder="Введите дополнительную информацию"></textarea>
+        <div class="info">
+            <label for="message">Дополнительная информация</label>
+            <textarea name="message" id="message" placeholder="Введите дополнительную информацию"></textarea>
+        </div>
         <button>Отправить</button>
     </div>
 </form>
