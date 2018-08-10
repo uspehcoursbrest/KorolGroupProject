@@ -17,8 +17,247 @@ ul {
     list-style-type: none;
 }
 
+input, button, textarea {
+    outline: none;
+    font-family: "Open Sans";
+}
+
 .container {
     width: 1010px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
+header .login {
+    font-size: 13px;
+    line-height: 18px;
+    color: #0069b4;
+}
+
+header .menu a {
+    font-size: 13px;
+    line-height: 28px;
+    color: #333333;
+}
+
+header .phone {
+    font-size: 20px;
+    line-height: 20px;
+    color: #333333;
+    text-decoration: none;
+}
+
+header .callback {
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #0069b4;
+    border-bottom: 1px dashed #0069b4;
+}
+
+header p.timing {
+    font-size: 13px;
+    line-height: 19px;
+    color: #999999;
+}
+
+header .basket {
+    font-size: 13px;
+    line-height: 24px;
+    color: #333333;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 28px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+header .basket span {
+    color: #1a9547;
+}
+
+header [class*="icon"] {
+    color: #1a9547;
+}
+
+header .login [class*="icon"] {
+    font-size: 18px;
+}
+
+header .phone [class*="icon"] {
+    font-size: 20px;
+}
+
+.advantages .item span {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    color: #333333;
+}
+
+.advantages .item p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #666666;
+}
+
+.subscribe {
+    background-color: #64ba4a;
+}
+
+.subscribe label {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.subscribe input {
+    font-size: 13px;
+    line-height: 37px;
+    color: #999999;
+    border: none;
+}
+
+.subscribe button {
+    font-size: 13px;
+    line-height: 37px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #259c47;
+    border: none;
+}
+
+.subscribe .wrap span {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.filter li {
+    font-size: 13px;
+    line-height: 16px;
+    border-bottom: 1px dashed #666666;
+}
+
+.filter li a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.card .img {
+    width: 220px;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.card .title {
+    font-size: 15px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.card a {
+    font-size: 15px;
+    line-height: 22px;
+    color: #0069b4;
+}
+
+.card .price {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #333333;
+}
+
+.card .price .old {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    text-decoration: line-through;
+    color: #666666;
+}
+
+.card button {
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    background-color: #ff7200;
+}
+
+.socials h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    color: #666666;
+}
+
+.tabs li a {
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 45px;
+    color: #999999;
+}
+
+.info .content {
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.info .title {
+    text-transform: uppercase;
+}
+
+footer {
+    font-size: 13px;
+    line-height: 22px;
+    color: #ffffff;
+    background-color: #64ba4a;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a[class*="icon"] {
+    font-size: 21px;
+}
+
+.social-item:first-child,
+.social-item:last-child {
+    width: 290px;
+    height: 400px;
+}
+
+.social-item:nth-child(2) {
+    margin: 0 25px;
+    width: 350px;
+    height: 400px;
+}
+
+.social-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner .sale {
+    width: 305px;
+    height: 360px;
+}
+
+.banner .slider {
+    width: 645px;
+    height: 360px;
+}
+
+.banner>div {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
