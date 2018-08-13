@@ -261,3 +261,91 @@ footer a[class*="icon"] {
     background-repeat: no-repeat;
 }
 
+/*-----------------------------------------СТИЛИ ДЛЯ CLIENT.HTML--------------------------------------------------*/
+
+.breadcrumbs li a {
+    font-size: 13px;
+    line-height: 19px;
+    color: #999999;
+    text-decoration: none;
+}
+
+p {
+    font-size: 13px;
+}
+
+.clientWrap label {
+    font-size: 13px;
+    font-style: italic;
+    color: #999999;
+}
+
+.clientWrap .left button {
+    font-size: 14px;
+    line-height: 32px;
+    width: 130px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    background-color: #ff7200;
+}
+
+.clientWrap .right button {
+    font-size: 13px;
+    line-height: 32px;
+    width: 190px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #64ba4a;
+    border: none;
+}
+
+.clientWrap .left span:first-child {
+    font-size: 13px;
+}
+
+.clientWrap .left span:last-child {
+    font-size: 11px;
+    line-height: 19px;
+    color: #999999;
+}
+
+/*-----------------------------------------СТИЛИ ДЛЯ NEWS.HTML--------------------------------------------------*/
+
+.date {
+    font-size: 12px;
+    line-height: 19px;
+    color: #999999;
+}
+
+.otherNews {
+    color: #0069b4;
+    font-size: 13px;
+}
+
+.newsImg {
+    height: 205px;
+    width: 980px;
+}
+
+/*-----------------------------------------СТИЛИ ДЛЯ ORDER.HTML--------------------------------------------------*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!НЕ ПОЛУЧАЕТСЯ ЗАДАТЬ СТИЛИ ДЛЯ ЛЕЙБЛОВ !!!!!!!!!!!!!!!!!!!!!*/
+.city label {
+    font-size: 13px;
+    font-style: italic;
+    color: #999999;
+}
+
+fieldset span {
+    font-size: 15px;
+}
+
+fieldset .addres span {
+    font-size: 15px;
+}
+
+fieldset .addres label {
+    font-size: 13px;
+    font-style: italic;
+    color: #999999;
+}
