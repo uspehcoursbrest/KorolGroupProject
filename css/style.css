@@ -28,6 +28,12 @@ input, button, textarea {
     padding: 0 15px;
 }
 
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 header .login {
     font-size: 13px;
     line-height: 18px;
@@ -38,6 +44,11 @@ header .menu a {
     font-size: 13px;
     line-height: 28px;
     color: #333333;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 18px;
 }
 
 header .phone {
@@ -88,6 +99,17 @@ header .phone [class*="icon"] {
     font-size: 20px;
 }
 
+.advantages {
+    width: calc(100% - 320px);
+    float: left;
+}
+
+.advantages .item {
+    width: 25%;
+    float: left;
+}
+
+
 .advantages .item span {
     font-size: 14px;
     font-weight: bold;
@@ -99,6 +121,11 @@ header .phone [class*="icon"] {
     font-size: 12px;
     line-height: 14px;
     color: #666666;
+}
+
+.subscribe {
+    width: 320px;
+    float: left;
 }
 
 .subscribe {
@@ -135,6 +162,11 @@ header .phone [class*="icon"] {
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px dashed #666666;
+    display: inline-block;
+}
+
+.filter li + li {
+    margin-left: 15px;
 }
 
 .filter li a {
@@ -168,6 +200,8 @@ header .phone [class*="icon"] {
     font-weight: 600;
     line-height: 30px;
     color: #333333;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .card .price .old {
@@ -176,6 +210,8 @@ header .phone [class*="icon"] {
     line-height: 16px;
     text-decoration: line-through;
     color: #666666;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .card button {
@@ -219,6 +255,26 @@ footer {
     background-color: #64ba4a;
 }
 
+.footMenu {
+    width: 50%;
+    float: left;
+}
+
+.contacts {
+    width: 25%;
+    float: left;
+}
+
+.copyright {
+    width: 25%;
+    float: left;
+}
+
+.footMenu .col {
+    width: 50%;
+    float: left;
+}
+
 footer a {
     text-decoration: none;
     color: #ffffff;
@@ -226,6 +282,7 @@ footer a {
 
 footer a[class*="icon"] {
     font-size: 21px;
+
 }
 
 .social-item:first-child,
@@ -278,6 +335,12 @@ p {
     font-size: 13px;
     font-style: italic;
     color: #999999;
+}
+
+label.addLogo {
+    color: #26b319;
+    text-decoration: underline;
+    font-style: normal;
 }
 
 .clientWrap .left button {
@@ -349,3 +412,5 @@ fieldset .addres label {
     font-style: italic;
     color: #999999;
 }
+
+/*-----------------------------------------ПОЗИЦИОНИРОВАНИЕ--------------------------------------------------*/
