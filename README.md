@@ -1,1 +1,1 @@
-# KorolGroupProject
+# KarpovichGroupProject

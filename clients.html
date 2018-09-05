@@ -3,136 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <title>ЭКО</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
     <div class="container">
-        <div class="left">
-            <a href="#" class="login">
-                <span class="icon-user"></span>
-                Войти в личный кабинет
-            </a>
-            <ul class="menu">
-                <li><a href="#">Оптовикам</a></li>
-                <li><a href="#">Корпоративным клиентам</a></li>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">О мастерской</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </div>
-        <div class="logo">
-            <a href="#">
-                <img src="img/png/logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="right">
-            <a href="tel: 84956488456" class="phone">
-                <span class="icon-phone"></span>
-                8 (495) 648-8-456
-            </a>
-            <a href="#" class="callback">Не дозвонились?</a>
-            <p class="timing">Мы работаем пн-пт 10:00 - 19:00</p>
-            <a href="#" class="basket" style="background-image: url(img/png/basketl.png)">товаров <span>5</span> на сумму <span>2550&#8381;</span></a>
+        <div class="table">
+            <div class="left">
+                <a href="#" class="login">
+                    <span class="icon-user"></span>
+                    Войти в личный кабинет
+                </a>
+                <ul class="menu">
+                    <li><a href="#">Оптовикам</a></li>
+                    <li><a href="clients.html">Корпоративным клиентам</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="news.html">О мастерской</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="main.html">
+                    <img src="img/png/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="right">
+                <a href="tel: 84956488456" class="phone">
+                    <span class="icon-phone"></span>8 (495) 648-8-456
+                </a><br>
+                <a href="#" class="callback">Не дозвонились?</a>
+                <p class="timing">Мы работаем пн-пт<br>10:00 - 19:00</p>
+                <a href="#" class="basket" style="background-image: url(img/png/basket.png)">товаров <span>5</span> на
+                    сумму <span>2550&#8381;</span></a>
+            </div>
         </div>
     </div>
 </header>
 <div class="container">
     <div class="content">
         <ul class="breadcrumbs">
-            <li><a href="">Главная</a></li>
-            <li><a href="">Корпоративным клиентам</a></li>
-            <li></li>
+            <li><a href="main.html">Главная / </a></li>
+            <li><span>Корпоративным клиентам</span></li>
         </ul>
-        <div class="clientWrap">
+        <div class="clientWrap cfix">
             <div class="left">
-                <p>Для расчета заказа заполните форму ниже, или позвоните нам 8 (495) 648-8-456</p>
-                <form action="#">
+                <p>Для расчета заказа заполните форму ниже,
+                    или позвоните нам 8 (495) 648-8-456
+                </p>
+                <div class="formClientWrap">
+                    <form action="#">
                     <div>
-                        <label for="orgName">Название организации</label>
-                        <input type="text" name="orgName" id="orgName">
+                        <label class="labelFormClient" for="orgName">Название организации</label>
+                        <input class="formSize bordOrd" type="text" name="orgName" id="orgName">
                     </div>
                     <div>
-                        <label for="contact">Контактное лицо</label>
-                        <input type="text" name="contact" id="contact">
+                        <label class="labelFormClient" for="contact">Контактное лицо</label>
+                        <input class="formSize bordOrd" type="text" name="contact" id="contact">
                     </div>
                     <div>
-                        <label for="phoneNum">Номер телефона</label>
-                        <input type="text" name="phoneNum" id="phoneNum">
+                        <label class="labelFormClient" for="phoneNum">Номер телефона</label>
+                        <input class="formSize bordOrd" type="text" name="phoneNum" id="phoneNum">
                     </div>
+                    <div class="addLogo cfix">
+                        <div class="leftLogo">
+                            <span class="writeLogo">Нанесение логотипа</span>
+                            <span class="signature">занимает 20 рабочих дней</span>
+                        </div>
+                        <ul class="rightLogo cfix">
+                            <li>
+                                <input class="radioBtn"  type="radio" name="logoOn" id="logoOn1" checked>
+                                <label for="logoOn1">Да</label>
+
+                            </li>
+                            <li>
+                                <input class="radioBtn"  type="radio" name="logoOn" id="logoOn2">
+                                <label for="logoOn2">Нет</label>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="addFile">
+                        <input type="file" name="addLogo" id="addLogo">
+                        <label for="addLogo">Прикрепите логотип</label>
+                        <span class="signature">.cdr, .ai, .eps, .tiff</span>
+                    </div>
+                    <div class="howMany">
+                        <label class="labelFormClient" for="howMuch">Количество фигурок</label>
+                        <select class="heightClientForm bordOrd" name="howMuch" id="howMuch">
+                            <option value="150">150</option>
+                        </select>
+                    </div>
+                    <div class="date">
+                        <label class="labelFormClient" for="date">Подготовить заказ к</label>
+                        <div>
+                            <input class="heightClientForm bordOrd" type="date" name="date" id="date">
+                            <img src="img/png/calendar.png" alt="date">
+                        </div>
+                    </div>
+                    <div class="addInf">
+                        <label class="labelFormClient" for="moreInfo">Дополнительная информация</label>
+                        <textarea class="widthClientForm bordOrd" name="moreInfo" id="moreInfo"></textarea>
+                    </div>
+                    <button>Отправить</button>
                 </form>
-                <div>
-                    <div>
-                        <span>Нанесение логотипа</span>
-                        <span>занимает 20 рабочих дней</span>
-                    </div>
-                    <ul>
-                        <li>
-                            <input type="radio" name="logoOn" id="logoOn1" checked>
-                            <label for="logoOn1">Да</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="logoOn" id="logoOn2">
-                            <label for="logoOn2">Нет</label>
-                        </li>
-                    </ul>
                 </div>
-                <div>
-                    <input type="file" name="addLogo" id="addLogo">
-                    <label for="addLogo" class="addLogo">Прикрепите логотип</label>
-                    <span>cdr, .ai, .eps, .tiff</span>
-                </div>
-                <div>
-                    <label for="howMuch">Количество фигурок</label>
-                    <select name="howMuch" id="howMuch">
-                        <option value=""></option>
-                    </select>
-                </div>
-                <div>
-                    <label for="date">Подготовить заказ к</label>
-                    <input type="text" name="date" id="date">
-                </div>
-                <div>
-                    <label for="moreInfo">Дополнительная информация</label>
-                    <textarea name="moreInfo" id="moreInfo"></textarea>
-                </div>
-                <button>Отправить</button>
             </div>
             <div class="right">
                 <div>
                     <h3>Свежий подарок</h3>
                     <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь стильный и
-                        лаконичный
-                        образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте, а нанесение
-                        логотипа
-                        вашей компании еще раз подчеркнет положительный образ в глазах клиента.</p>
+                        лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте,
+                        а нанесение логотипа вашей компании еще раз подчеркнет положительный образ в глазах клиента.
+                    </p>
                     <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и
-                        подготовят ваш
-                        логотип для нанесения на фигурку.</p>
+                        подготовят ваш логотип для нанесения на фигурку.
+                    </p>
                 </div>
                 <div>
                     <h3>Разные образы</h3>
                     <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь стильный и
-                        лаконичный
-                        образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте, а нанесение
-                        логотипа
-                        вашей компании еще раз подчеркнет положительный образ в глазах клиента.</p>
+                        лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте,
+                        а нанесение логотипа вашей компании еще раз подчеркнет положительный образ в глазах клиента.
+                    </p>
                     <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и
-                        подготовят ваш
-                        логотип для нанесения на фигурку.</p>
+                        подготовят ваш логотип для нанесения на фигурку.
+                    </p>
                 </div>
                 <div>
                     <h3>Фигурки на заказ</h3>
                     <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь стильный и
-                        лаконичный
-                        образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте, а нанесение
-                        логотипа
-                        вашей компании еще раз подчеркнет положительный образ в глазах клиента.</p>
+                        лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте,
+                        а нанесение логотипа вашей компании еще раз подчеркнет положительный образ в глазах клиента.
+                    </p>
                     <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и
-                        подготовят ваш
-                        логотип для нанесения на фигурку.</p>
+                        подготовят ваш логотип для нанесения на фигурку.
+                    </p>
                 </div>
                 <button>Скачать презентацию</button>
             </div>
@@ -141,37 +149,43 @@
 </div>
 <footer>
     <div class="container">
-        <ul>
-            <li>
-                <ul>
-                    <li><a href="#">Оптовикам</a></li>
-                    <li><a href="#">Корпоративным клиентам</a></li>
-                    <li><a href="#">Войти в личный кабинет</a></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">О мастерской</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </li>
-        </ul>
-        <div><a href="tel: 89456488456">8 (495) 648-8-456</a>
-            <a href="#">ecocheloveki@gmail.com</a>
-            <span>пн-пт 10:00-19:00</span>
-            <span>Ищите нас здесь</span>
-            <a href="#" class="icon-soc3"></a>
-            <a href="#" class="icon-soc2"></a>
-            <a href="#" class="icon-soc1"></a>
-        </div>
-        <div>
-            <span>© 2011-2014 Экочеловечки</span>
-            <span>Все права защищены</span>
-            <span>Все цены указаны в рублях</span>
-            <span><a href="">Разработка «Биат»</a></span>
+        <div class="cfix">
+            <ul class="footMenu cfix">
+                <li class="col">
+                    <ul>
+                        <li><a href="#">Оптовикам</a></li>
+                        <li><a href="#">Корпоративным клиентам</a></li>
+                        <li><a href="#">Войти в личный кабинет</a></li>
+                    </ul>
+                </li>
+                <li class="col">
+                    <ul>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">О мастерской</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="contacts">
+                <a href="tel: 89456488456">8 (495) 648-8-456</a>
+                <a href="mailto: ecocheloveki@gmail.com">ecocheloveki@gmail.com</a>
+                <span>пн-пт 10:00 - 19:00</span>
+                <div>
+                    <span>Ищите нас здесь</span>
+                    <a href="#" class="icon-soc3"></a>
+                    <a href="#" class="icon-soc2"></a>
+                    <a href="#" class="icon-soc1"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>© 2011-2014 Экочеловечки</span>
+                <span>Все права защищены</span>
+                <span>Все цены указаны в рублях</span>
+                <span><a href="">Разработка «Биат»</a></span>
+            </div>
         </div>
     </div>
 </footer>
+<button class="call"><span class="icon-phone"></span></button>
 </body>
 </html>

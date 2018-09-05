@@ -28,10 +28,47 @@ input, button, textarea {
     padding: 0 15px;
 }
 
-.clear::after {
+.cfix::after {
     content: '';
     display: block;
     clear: both;
+}
+
+a{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+header {
+    padding-bottom: 18px;
+}
+
+header .table {
+    display: table;
+    width: 100%;
+}
+
+header .left {
+    display: table-cell;
+    width: 33.3333%;
+    vertical-align: top;
+    text-align: left;
+}
+
+header .logo {
+    display: table-cell;
+    width: 33.3333%;
+    vertical-align: top;
+    text-align: center;
+}
+
+header .right {
+    display: table-cell;
+    width: 33.3333%;
+    vertical-align: top;
+    text-align: right;
 }
 
 header .login {
@@ -40,10 +77,18 @@ header .login {
     color: #0069b4;
 }
 
+header .login:hover {
+    text-decoration: none;
+}
+
 header .menu a {
     font-size: 13px;
     line-height: 28px;
     color: #333333;
+}
+
+header .menu a:hover {
+    text-decoration: none;
 }
 
 .menu li {
@@ -56,6 +101,49 @@ header .phone {
     line-height: 20px;
     color: #333333;
     text-decoration: none;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+header .phone:hover {
+    color: #1a9547;
+}
+
+header .phone span {
+    opacity: 1;
+}
+
+@keyframes phoneAnimation {
+    0%{
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        transform: scale(0.7);
+        opacity: 1;
+    }
+    50%{
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+header .phone span:before {
+    animation-name: phoneAnimation;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 header .callback {
@@ -64,6 +152,14 @@ header .callback {
     text-decoration: none;
     color: #0069b4;
     border-bottom: 1px dashed #0069b4;
+    -webkit-transition: border-bottom 0.3s;
+    -moz-transition: border-bottom 0.3s;
+    -o-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
+}
+
+header .callback:hover {
+    border-bottom: 1px dashed transparent;
 }
 
 header p.timing {
@@ -74,13 +170,21 @@ header p.timing {
 
 header .basket {
     font-size: 13px;
-    line-height: 24px;
+    line-height: 22px;
     color: #333333;
     text-decoration: none;
     display: inline-block;
     padding-left: 28px;
     background-repeat: no-repeat;
     background-position: left center;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+header .basket:hover {
+    color: #1a9547;
 }
 
 header .basket span {
@@ -88,10 +192,10 @@ header .basket span {
 }
 
 header [class*="icon"] {
-    color: #1a9547;
+    color: #caebd4;
 }
 
-header .login [class*="icon"] {
+header .login [class*=icon] {
     font-size: 18px;
 }
 
@@ -99,40 +203,71 @@ header .phone [class*="icon"] {
     font-size: 20px;
 }
 
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.banner .sale {
+    width: 305px;
+    height: 360px;
+}
+
+.banner .slider {
+    width: 645px;
+    height: 360px;
+}
+
+.banner > div {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.advSub {
+    margin-bottom: 30px;
+}
+
 .advantages {
     width: calc(100% - 320px);
     float: left;
 }
 
-.advantages .item {
+.advantages .item { 
     width: 25%;
     float: left;
 }
-
 
 .advantages .item span {
     font-size: 14px;
     font-weight: bold;
     line-height: 17px;
     color: #333333;
+    display: block;
+    margin-top: 18px;
 }
 
 .advantages .item p {
     font-size: 12px;
     line-height: 14px;
     color: #666666;
+    margin-top: 11px;
 }
 
 .subscribe {
+    background-color: #63b849;
     width: 320px;
     float: left;
 }
 
-.subscribe {
-    background-color: #64ba4a;
+.subscribe form {
+    padding: 10px 19px 19px 19px;
 }
 
 .subscribe label {
+    line-height: 24px;
     font-size: 16px;
     color: #ffffff;
 }
@@ -142,6 +277,9 @@ header .phone [class*="icon"] {
     line-height: 37px;
     color: #999999;
     border: none;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 14px;
 }
 
 .subscribe button {
@@ -151,11 +289,39 @@ header .phone [class*="icon"] {
     color: #ffffff;
     background-color: #259c47;
     border: none;
+    width: 188px;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+.subscribe button:hover { 
+    opacity: 0.7;
+}
+
+.subScribe .wrap {
+    width: 100%;
+    display: table;
 }
 
 .subscribe .wrap span {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 25px;
+}
+
+.catalog {
+    margin-bottom: 60px;
+}
+
+.filter {
+    margin-bottom: 30px;
 }
 
 .filter li {
@@ -163,9 +329,17 @@ header .phone [class*="icon"] {
     line-height: 16px;
     border-bottom: 1px dashed #666666;
     display: inline-block;
+    -webkit-transition: border-bottom 0.3s;
+    -moz-transition: border-bottom 0.3s;
+    -o-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
 }
 
-.filter li + li {
+.filter li:hover {  
+    border-bottom: 1px dashed transparent;
+}
+
+.filter li+li {
     margin-left: 15px;
 }
 
@@ -174,7 +348,18 @@ header .phone [class*="icon"] {
     color: #666666;
 }
 
-.status {
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.card {
+    position: relative;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.cards .card .status {
     position: absolute;
     display: block;
     top: -3px;
@@ -185,35 +370,20 @@ header .phone [class*="icon"] {
     text-align: center;
 }
 
-.status.hit {
-    background-color: #6eddcc;
-}
-
-.status.discount {
-    background-color: #ffed03;
-}
-
-.status.new {
-    background-color: #78ec71;
-}
-
-.card {
-    position: relative;
-}
-
 .card .img {
     width: 220px;
     height: 220px;
+    -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .card .title {
     font-size: 15px;
     line-height: 22px;
     color: #333333;
+    display: block;
 }
 
 .card a {
@@ -241,13 +411,63 @@ header .phone [class*="icon"] {
     vertical-align: top;
 }
 
-.card button {
+.card .content {
+    position: relative;
+    min-height: 95px;
+}
+
+.card .content .buy {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0px;
+}
+
+.card .buy button {
+    background-color: #ff7100;
+    width: 103px;
+    height: 32px;
     font-size: 14px;
-    line-height: 32px;
+    line-height: 16px;
     text-align: center;
     color: #ffffff;
-    border: none;
-    background-color: #ff7200;
+    cursor: pointer;
+    float: right;
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.card .buy button:hover {
+    border: 1px solid #ff7100;
+    background-color: #fff;
+    color: #ff7100;
+}
+ 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.status.hit {
+    background-color: #6eddcc;
+}
+
+.status.discount {
+    background-color: #ffed03;
+}
+
+.status.new {
+    background-color: #78ec71;
+}
+
+.socials {
+    margin-bottom: 30px;
 }
 
 .socials h2 {
@@ -256,44 +476,95 @@ header .phone [class*="icon"] {
     line-height: 22px;
     text-align: center;
     color: #666666;
+    margin-bottom: 60px;
 }
 
-.tabs li a {
+.socials .wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialItem {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.socialItem:first-child, .socialItem:last-child {
+    width: 290px;
+    height: 400px;
+}
+
+.socialItem:nth-child(2) {
+    width: 350px;
+    height: 400px;
+}
+
+.info {
+    padding-bottom: 30px;
+}
+
+.info .tabs {
+    margin-bottom: 20px;
+}
+
+.info .tabs li {
+    display: inline-block;
+}
+
+.info .tabs li a {
+    width: 100%;
     font-size: 14px;
     text-decoration: none;
     line-height: 45px;
     color: #999999;
+    padding-left: 12px;
+    padding-right: 18px;
+    height: 100%;
+    display: inline-block;
 }
 
-.info .content {
+.info .tabs li a:hover {
+    background-color: #f2fff7;
+    color: #1c9847;
+}
+
+.info .content { 
     font-size: 12px;
     line-height: 18px;
     color: #333333;
 }
-
+    
 .info .title {
     text-transform: uppercase;
+    position: relative;
+    display: block;
+    padding-left: 25px;
 }
 
 footer {
+    padding-top: 33px;
+    padding-bottom: 53px;
     font-size: 13px;
     line-height: 22px;
     color: #ffffff;
     background-color: #64ba4a;
 }
 
+footer a {
+    display: table;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a[class*="icon"] {
+    font-size: 21px;
+    display: inline-block;
+    margin-left: 8px;
+}
+
 .footMenu {
     width: 50%;
-    float: left;
-}
-
-.contacts {
-    width: 25%;
-    float: left;
-}
-
-.copyright {
-    width: 25%;
     float: left;
 }
 
@@ -302,142 +573,699 @@ footer {
     float: left;
 }
 
-footer a {
-    text-decoration: none;
-    color: #ffffff;
+.contacts {
+    float: left;
+    width: 25%;
 }
 
-footer a[class*="icon"] {
-    font-size: 21px;
-
+.copyright {
+    float: left;
+    width: 25%;
 }
 
-.social-item:first-child,
-.social-item:last-child {
+.copyright span {
+    display: block;
+    text-align: right;
+}
+
+.copyright span a {
+    display: inline;
+    border-bottom: 1px solid #ffffff;
+}
+
+.socialItem:first-child, .socialItem:last-child {
     width: 290px;
     height: 400px;
 }
 
-.social-item:nth-child(2) {
+.socialItem:nth-child(2) {
     margin: 0 25px;
     width: 350px;
     height: 400px;
 }
 
-.social-item {
+.socialItem {
+    -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.banner .sale {
-    width: 305px;
-    height: 360px;
-}
 
-.banner .slider {
-    width: 645px;
-    height: 360px;
-}
-
-.banner>div {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/*-----------------------------------------СТИЛИ ДЛЯ CLIENT.HTML--------------------------------------------------*/
-
-.breadcrumbs li a {
-    font-size: 13px;
-    line-height: 19px;
+.breadcrumbs a, li{
+    font-size: 12px;
     color: #999999;
     text-decoration: none;
 }
 
-p {
+.clientWrap .left p{
     font-size: 13px;
+    color: #333333;
 }
 
-.clientWrap label {
+.clientForm {
+    background-color: #f9f9f9;
+}
+
+.clientForm form label {
     font-size: 13px;
+    color: #666666;
     font-style: italic;
+}
+
+.chooseLogoAdd .drawing {
+    font-size: 13px;
+    color: #333333;
+}
+
+.chooseLogoAdd .waiting {
+    font-size: 11px;
     color: #999999;
 }
 
-label.addLogo {
-    color: #26b319;
+.chooseLogoAdd label {
+    font-size: 13px;
+    color: #666666;
+}
+
+.logoAdd .textLogoAdd {
+    font-size: 13px;
+    color: #229647;
     text-decoration: underline;
-    font-style: normal;
+}
+
+.logoAdd span {
+    font-size: 11px;
+    color: #999999;
+}
+
+.quantity, .workDate, .leftInfo label {
+    font-size: 13px;
+    color: #666666;
+    font-style: italic;
+}
+
+.formButton {
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #ff7200;
+    width: 130px;
+    height: 30px;
+    border: 0;
+}
+
+.clientWrap .right h3 {
+    font-size: 25px;
+    color: #333333;
+}
+
+.clientWrap .right p {
+    font-size: 13px;
+    color: #333333;
+}
+
+.clientButton {
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #64ba4a;
+    width: 195px;
+    height: 35px;
+    border: 0;
+}
+
+.content h3 {
+    font-size: 18px;
+    color: #333333;
+}
+
+.content .date {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+.content p {
+    font-size: 13px;
+    color: #333333;
+}
+
+.otherNews { 
+    font-size: 13px;
+    color: #0069b4;
+}
+
+.orderForm fieldset {
+    border: 0;
+}
+
+.chooseCity label {
+    font-size: 13px;
+    color: #666666;
+    font-style: italic;
+}
+
+.chooseCity option {
+    font-size: 13px;
+    color: #333333;
+}
+
+.chooseDeliv label {
+    font-size: 13px;
+    color: #333333;
+}
+
+.chooseDeliv span {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.chooseDeliv p {
+    font-size: 12px;
+    color: #666666;
+}
+
+.chooseDeliv .additional {
+    font-weight: normal;
+    font-size: 12px;
+    color: #f26522;
+}
+
+.delivInfo span {
+    font-size: 15px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.delivInfo label {
+    font-size: 13px;
+    color: #666666;
+    font-style: italic;
+}
+
+.delivInfo label span {
+    color: #ee393e;
+}
+
+.choosePay span {
+    font-weight: 600;
+    font-size: 15px;
+    color: #333333;
+}
+
+.choosePay label {
+    font-size: 13px;
+    color: #333333;
+}
+
+.choosePay p { 
+    font-size: 12px;
+    color: #666666;
+}
+
+.yourInfo span {
+    font-weight: 600;
+    font-size: 15px;
+    color: #333333;
+}
+
+.yourInfo label {
+    font-size: 13px;
+    color: #666666;
+    font-style: italic;
+}
+
+.yourInfo button {
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #ea5b0c;
+    width: 195px;
+    height: 35px;
+    border: 0;
+}
+
+.call {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #64ba4a;
+    position: fixed;
+    right: 100px;
+    bottom: 200px;
+    border-radius: 50px;
+}
+
+.call [class*="icon"] {
+    font-size: 25px;
+    line-height: 50px;
+    color: #ffffff;
+}
+
+.call::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: #64ba4a;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.2;
+    color: #ffffff;
+    animation: circleFill 2.2s infinite ease-in-out;
+}
+
+.call::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    border: 1px solid #64ba4a;
+    border-radius: 50%;
+    z-index: -1;
+    animation: circle 2.2s infinite ease-in-out;
+}
+
+@keyframes circleFill {
+    0% {
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.2;
+    }
+    100% {
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0.2;
+    }
+}
+
+@keyframes circle {
+    0% {
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0.01;
+    }
+    30% {
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        transform: scale(0.7);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.01;
+    }
+}
+
+/*-------------------------КЛИЕНТАМ-------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------*/
+
+.breadcrumbs {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 12px;
+    color: #999999;
+    padding-bottom: 22px;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.clientWrap{
+    padding-bottom: 55px;
+}
+
+.clientWrap .left {
+    width: 305px;
+    float: left;
+}
+
+.clientWrap .left p {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.clientWrap .left .formClientWrap {
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 14px 10px 20px 10px;
+}
+
+.clientWrap .left .labelFormClient {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 22px;
+    color: #666666;
+}
+
+.clientWrap .formSize {
+    width: 283px;
+    height: 27px;
+}
+
+.clientWrap .left input {
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #333333;
+    display: block;
+}
+
+.clientWrap .addLogo .leftLogo{
+    width: 145px;
+    float: left;
+}
+
+.clientWrap .addLogo .writeLogo {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #333333;
+}
+
+.clientWrap .left .signature {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 11px;
+    color: #999999;
+    display: block;
+}
+
+.clientWrap .addLogo .rightLogo{
+    width: calc(100% - 175px);
+    float: right;
+}
+
+.clientWrap .addLogo .rightLogo li{
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+.clientWrap .left .addLogo label {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 19px;
+    color: #666666;
+    display: inline-block;
+    position: relative;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.clientWrap .addLogo input{
+    display: none;
+}
+
+.addLogo .radioBtn:not(checked) + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 27px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.addLogo .radioBtn:not(checked) + label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 33px;
+    width: 7px;
+    height: 7px;
+    background-color: #51bf87;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.addLogo .radioBtn:checked + label::before {
+    border-color: #51bf87;
+}
+
+.addLogo .radioBtn:checked + label::after {
+    opacity: 1;
+}
+
+.addLogo .radioBtn + label {
+    cursor: pointer;
+}
+
+.clientWrap .left .addFile input {
+    display: none;
+}
+
+.clientWrap .left .addFile{
+    margin-top: 8px;
+}
+
+.clientWrap .left .addFile label {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 22px;
+    text-decoration: underline;
+    color: #229647;
+}
+
+.clientWrap .left .howMany{
+    margin-top: 14px;
+    margin-bottom: 7px;
+}
+
+.clientWrap .left .howMany select{
+    width: 84px;
+    display: block;
+}
+
+.clientWrap .date div input{
+    width: 106px;
+    display: inline-block;
+}
+
+.clientWrap .date div img{
+    margin-left: 6px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.clientWrap .addInf textarea{
+    height: 124px;
+    margin-bottom: 22px;
 }
 
 .clientWrap .left button {
-    font-size: 14px;
-    line-height: 32px;
-    width: 130px;
-    text-align: center;
-    color: #ffffff;
     border: none;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #ffffff;
+    text-align: center;
     background-color: #ff7200;
+    width: 130px;
+    height: 31px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.clientWrap .left button:hover {
+    border: 1px solid #ff7100;
+    background-color: #fff;
+    color: #ff7100;
+}
+
+.clientWrap .right {
+    width: calc(100% - 310px);
+    float: left;
+    padding-left: 35px;
+    padding-bottom: 20px;
+}
+
+.clientWrap .right h3 {
+    font-family: ;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333;
+    padding-bottom: 12px;
+}
+
+.clientWrap .right p {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #333333;
+    padding-bottom: 23px;
+}
+
+.clientWrap .right p:last-child {
+    padding-bottom: 18px;
 }
 
 .clientWrap .right button {
-    font-size: 13px;
-    line-height: 32px;
-    width: 190px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
     text-align: center;
     color: #ffffff;
-    background-color: #64ba4a;
     border: none;
+    background-color: #64ba4a;
+    width: 194px;
+    height: 31px;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1;
 }
 
-.clientWrap .left span:first-child {
-    font-size: 13px;
+.clientWrap .right button:hover {
+    opacity: 0.5;
 }
 
-.clientWrap .left span:last-child {
-    font-size: 11px;
-    line-height: 19px;
-    color: #999999;
+/*----------------------------НОВОСТИ ПОДРОБНО----------------------------
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+.newsWrap h2 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 40px;
 }
 
-/*-----------------------------------------СТИЛИ ДЛЯ NEWS.HTML--------------------------------------------------*/
+.newsWrap h3 {
+    margin-bottom: 5px;
+}
 
 .date {
     font-size: 12px;
-    line-height: 19px;
-    color: #999999;
-}
-
-.otherNews {
-    color: #0069b4;
-    font-size: 13px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #aaaaaa;
+    margin-bottom: 15px;
+    display: inline-block;
 }
 
 .newsImg {
-    height: 205px;
-    width: 980px;
+    background-color: #b3b3b3;
+    width: 100%;
+    height: 208px;
+    margin-bottom: 20px;
 }
 
-/*-----------------------------------------СТИЛИ ДЛЯ ORDER.HTML--------------------------------------------------*/
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!НЕ ПОЛУЧАЕТСЯ ЗАДАТЬ СТИЛИ ДЛЯ ЛЕЙБЛОВ !!!!!!!!!!!!!!!!!!!!!*/
-.city label {
+.newsText {
     font-size: 13px;
-    font-style: italic;
-    color: #999999;
+    font-weight: normal;
+    line-height: 19px;
+    color: #333333;
+    margin-bottom: 28px;
 }
 
-fieldset span {
-    font-size: 15px;
+.newsText p {
+    margin-bottom: 19px;
 }
 
-fieldset .addres span {
-    font-size: 15px;
-}
-
-fieldset .addres label {
+.newsText + a {
     font-size: 13px;
-    font-style: italic;
-    color: #999999;
+    font-weight: normal;
+    line-height: 22px;
+    color: #0069b4;
+    margin-bottom: 45px;
+    display: block;
 }
 
-/*-----------------------------------------ПОЗИЦИОНИРОВАНИЕ--------------------------------------------------*/
+@media (max-width: 1199px) {
+    .container {
+        width: 980px;
+    }
+
+    .banner .sale {
+        width: 295px;
+        height: 350px;
+    }
+
+    .banner .slider {
+        width: 620px;
+        height: 350px;
+    }
+
+    .subScribe {
+        width: 300px;
+    }
+
+    .advantages {
+        width: calc(100% - 300px);
+    }
+
+    .card img {
+        height: 215px;
+    }
+
+    .socials {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 780px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+}

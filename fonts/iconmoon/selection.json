@@ -17,7 +17,7 @@
       "attrs": [],
       "properties": {
         "id": 272,
-        "order": 17,
+        "order": 38,
         "prevSize": 20,
         "code": 59648,
         "name": "user"
@@ -46,7 +46,7 @@
       "properties": {
         "ligatures": "phone, telephone",
         "name": "phone",
-        "order": 15,
+        "order": 39,
         "id": 67,
         "prevSize": 32,
         "code": 59714
@@ -73,7 +73,7 @@
       "properties": {
         "ligatures": "facebook2, brand11",
         "name": "soc1",
-        "order": 12,
+        "order": 36,
         "id": 402,
         "prevSize": 32,
         "code": 60049
@@ -101,7 +101,7 @@
       "properties": {
         "ligatures": "twitter, brand16",
         "name": "soc2",
-        "order": 13,
+        "order": 35,
         "id": 407,
         "prevSize": 32,
         "code": 60054
@@ -128,7 +128,7 @@
       "properties": {
         "name": "soc3",
         "ligatures": "vk, brand18",
-        "order": 14,
+        "order": 34,
         "id": 409,
         "prevSize": 32,
         "code": 60056

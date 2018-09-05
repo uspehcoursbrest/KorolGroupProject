@@ -3,39 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>ЭКО</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
     <div class="container">
-        <div class="left">
-            <a href="#" class="login">
-                <span class="icon-user"></span>
-                Войти в личный кабинет
-            </a>
-            <ul class="menu">
-                <li><a href="#">Оптовикам</a></li>
-                <li><a href="#">Корпоративным клиентам</a></li>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">О мастерской</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </div>
-        <div class="logo">
-            <a href="#">
-                <img src="img/png/logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="right">
-            <a href="tel: 84956488456" class="phone">
-                <span class="icon-phone"></span>
-                8 (495) 648-8-456
-            </a>
-            <a href="#" class="callback">Не дозвонились?</a>
-            <p class="timing">Мы работаем пн-пт 10:00 - 19:00</p>
-            <a href="#" class="basket" style="background-image: url(img/png/basketl.png)">товаров <span>5</span> на сумму <span>2550&#8381;</span></a>
+        <div class="table">
+            <div class="left">
+                <a href="#" class="login">
+                    <span class="icon-user"></span>
+                    Войти в личный кабинет
+                </a>
+                <ul class="menu">
+                    <li><a href="#">Оптовикам</a></li>
+                    <li><a href="clients.html">Корпоративным клиентам</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="news.html">О мастерской</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="main.html">
+                    <img src="img/png/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="right">
+                <a href="tel: 84956488456" class="phone">
+                    <span class="icon-phone"></span>8 (495) 648-8-456
+                </a><br>
+                <a href="#" class="callback">Не дозвонились?</a>
+                <p class="timing">Мы работаем пн-пт<br>10:00 - 19:00</p>
+                <a href="#" class="basket" style="background-image: url(img/png/basket.png)">товаров <span>5</span> на
+                    сумму <span>2550&#8381;</span></a>
+            </div>
         </div>
     </div>
 </header>
@@ -44,69 +47,61 @@
         <ul class="breadcrumbs">
             <li><a href="">Главная</a></li>
             <li><a href="">Корзина</a></li>
-            <li><a href="">Оформление заказа</a></li>
+            <li>Оформление заказа</li>
         </ul>
         <h2>Оформление заказа</h2>
-        <form action="#">
+        <form action="#" class="orderForm">
             <fieldset>
-                <div class="city">
+                <div class="chooseCity">
                     <label for="city">Выбор города</label>
                     <select name="city" id="city">
                         <option value="">Москва, Московская обл., Россия</option>
                     </select>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="chooseDeliv">
                 <span>Способ доставки</span>
-                <div class="deliveryMethod">
-                    <ul>
-                        <li><input type="radio" name="delivery" id="delivery1" checked>
-                            <label for="delivery1">Доставка курьерской службой по Москве и МО (IM Logistics) 0
-                                р.</label>
-                            <p>Заказ оформленный: - до 16:00 будет доставлен на следующий рабочий день; - после 16:00
-                                будет доставлен
-                                через один рабочий день;</p>
-                        </li>
-                        <li><input type="radio" name="delivery" id="delivery2">
-                            <label for="delivery2">Экспресс-доставка 450 р.</label>
-                            <p>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В пределах МКАД. Доставка
-                                осуществляется
-                                только по предоплате. Услуга "товары на выбор" при данном типе доставки недоступна.</p>
-                        </li>
-                        <li><input type="radio" name="delivery" id="delivery3">
-                            <label for="delivery3">Доставить в подарок 450 р.</label>
-                            <p>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД. Доставка
-                                осуществляется только
-                                по предоплате. Дополнительная услуга — подарочная упаковка</p>
-                        </li>
-                        <li><input type="radio" name="delivery" id="delivery4">
-                            <label for="delivery4">Самовывоз из пункта выдачи заказов 0 р.</label>
-                            <p>1-2 рабочих дня.</p>
-                        </li>
-                    </ul>
-                </div>
+                <ul>
+                    <li><input type="radio" name="delivery" id="delivery1" checked>
+                        <label for="delivery1">Доставка курьерской службой по Москве и МО (IM Logistics)   0 р.</label>
+                        <p>Заказ оформленный: - до 16:00 будет доставлен на следующий рабочий день; - после 16:00 будет доставлен через один рабочий день;</p>
+                    </li>
+                    <li><input type="radio" name="delivery" id="delivery2">
+                        <label for="delivery2">Экспресс-доставка   450 р.</label>
+                        <p>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В пределах МКАД. Доставка осуществляется только по предоплате. Услуга "товары на выбор" при данном типе доставки недоступна.</p>
+                    </li>
+                    <li><input type="radio" name="delivery" id="delivery3">
+                        <label for="delivery3">Доставить в подарок   450 р.</label>
+                        <p>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД. Доставка осуществляется только по предоплате.</p>
+                        <span class="additional">Дополнительная услуга — подарочная упаковка</span>
+                    </li>
+                    <li><input type="radio" name="delivery" id="delivery4">
+                        <label for="delivery4">Самовывоз из пункта выдачи заказов   0 р.</label>
+                        <p>1-2 рабочих дня.</p>
+                    </li>
+                </ul>
             </fieldset>
-            <fieldset class="addres">
+            <fieldset class="delivInfo">
                 <span>Адрес доставки</span>
                 <div>
-                    <label for="street">Улица</label>
+                    <label for="street">Улица<span>*</span></label>
                     <input type="text" name="street" id="street">
                 </div>
                 <div>
-                    <label for="district">Район</label>
+                    <label for="district">Район<span>*</span></label>
                     <input type="text" name="district" id="district">
                 </div>
                 <div>
                     <div>
-                        <label for="house">Дом</label>
+                        <label for="house">Дом<span>*</span></label>
                         <input type="text" name="house" id="house">
                     </div>
                     <div>
-                        <label for="buiding">Корпус</label>
+                        <label for="buiding">Корпус<span>*</span></label>
                         <input type="text" name="building" id="buiding">
                     </div>
                     <div>
-                        <label for="flat">Квартира/Офис</label>
+                        <label for="flat">Квартира/Офис<span>*</span></label>
                         <input type="text" name="flat" id="flat">
                     </div>
                 </div>
@@ -115,7 +110,7 @@
                     <textarea name="message" id="message"></textarea>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="choosePay">
                 <span>Способ оплаты</span>
                 <ul>
                     <li>
@@ -130,7 +125,7 @@
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="yourInfo">
                 <span>Ваши данные</span>
                 <div>
                     <label for="name">Имя</label>
@@ -151,35 +146,40 @@
 </div>
 <footer>
     <div class="container">
-        <ul>
-            <li>
-                <ul>
-                    <li><a href="#">Оптовикам</a></li>
-                    <li><a href="#">Корпоративным клиентам</a></li>
-                    <li><a href="#">Войти в личный кабинет</a></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">О мастерской</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </li>
-        </ul>
-        <div><a href="tel: 89456488456">8 (495) 648-8-456</a>
-            <a href="#">ecocheloveki@gmail.com</a>
-            <span>пн-пт 10:00 - 19:00</span>
-            <span>Ищите нас здесь</span>
-            <a href="#" class="icon-soc3"></a>
-            <a href="#" class="icon-soc2"></a>
-            <a href="#" class="icon-soc1"></a>
-        </div>
-        <div>
-            <span>© 2011-2014 Экочеловечки</span>
-            <span>Все права защищены</span>
-            <span>Все цены указаны в рублях</span>
-            <span><a href="">Разработка «Биат»</a></span>
+        <div class="cfix">
+            <ul class="footMenu cfix">
+                <li class="col">
+                    <ul>
+                        <li><a href="#">Оптовикам</a></li>
+                        <li><a href="#">Корпоративным клиентам</a></li>
+                        <li><a href="#">Войти в личный кабинет</a></li>
+                    </ul>
+                </li>
+                <li class="col">
+                    <ul>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">О мастерской</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="contacts">
+                <a href="tel: 89456488456">8 (495) 648-8-456</a>
+                <a href="mailto: ecocheloveki@gmail.com">ecocheloveki@gmail.com</a>
+                <span>пн-пт 10:00 - 19:00</span>
+                <div>
+                    <span>Ищите нас здесь</span>
+                    <a href="#" class="icon-soc3"></a>
+                    <a href="#" class="icon-soc2"></a>
+                    <a href="#" class="icon-soc1"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>© 2011-2014 Экочеловечки</span>
+                <span>Все права защищены</span>
+                <span>Все цены указаны в рублях</span>
+                <span><a href="">Разработка «Биат»</a></span>
+            </div>
         </div>
     </div>
 </footer>
