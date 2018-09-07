@@ -727,40 +727,40 @@ footer a[class*="icon"] {
     color: #333333;
 }
 
-.chooseDeliv label {
+.chooseDelivery label {
     font-size: 13px;
     color: #333333;
 }
 
-.chooseDeliv span {
+.chooseDelivery span {
     font-weight: 600;
     font-size: 15px;
 }
 
-.chooseDeliv p {
+.chooseDelivery p {
     font-size: 12px;
     color: #666666;
 }
 
-.chooseDeliv .additional {
+.chooseDelivery .additional {
     font-weight: normal;
     font-size: 12px;
     color: #f26522;
 }
 
-.delivInfo span {
+.deliveryInfo span {
     font-size: 15px;
     color: #333333;
     font-weight: 600;
 }
 
-.delivInfo label {
+.deliveryInfo label {
     font-size: 13px;
     color: #666666;
     font-style: italic;
 }
 
-.delivInfo label span {
+.deliveryInfo label span {
     color: #ee393e;
 }
 
@@ -1224,6 +1224,254 @@ footer a[class*="icon"] {
     color: #0069b4;
     margin-bottom: 45px;
     display: block;
+}
+
+.chooseCity select {
+    width: 288px;
+    height: 27px;
+    border: 1px solid #d6d6d6;
+}
+
+.chooseCity {
+    margin-top: 14px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.ChooseCity select {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #333333;
+    display: block;
+}
+
+.methodDelivery {
+    margin-top: 15px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.methodDelivery span:nth-child(1) {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.methodDelivery label {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 19px;
+    color: #333333;
+}
+
+.methodDelivery p {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #666666;
+}
+
+.methodDelivery .additional {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #f26522;
+}
+
+.orderList li {
+    width: 460px;
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+.orderList label {
+    position: relative;
+    padding-left: 40px;
+    margin-left: -40px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.orderList input {
+    display: none;
+}
+
+.orderList input:not(checked) + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.orderList input:not(checked) + label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left:6px;
+    width: 7px;
+    height: 7px;
+    background-color: #51bf87;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.orderList input:checked + label::before {
+    border-color: #51bf87;
+}
+
+.orderList input:checked + label::after {
+    opacity: 1;
+}
+
+.orderList input + label {
+    cursor: pointer;
+}
+
+.deliveryInfo div {
+    margin-top: 9px;
+}
+
+.deliveryInfo input {
+    display: block;
+}
+
+.deliveryInfo .deliveryStrDist input {
+    width: 288px;
+    height: 27px;
+}
+
+.deliveryInfo textarea {
+    display: block;
+    width: 288px;
+}
+
+.deliveryInfo div textarea {
+    height: 104px;
+}
+
+.deliveryFlex {
+    display: flex;
+}
+
+.deliveryFlex .deliveryArea1 input {
+    width: 57px;
+    height: 27px;
+}
+
+.deliveryFlex .deliveryArea2 input {
+    width: 57px;
+    height: 27px;
+}
+
+.deliveryFlex .deliveryArea3 input {
+    width: 95px;
+    height: 27px;
+}
+
+.deliveryFlex .deliveryArea2 {
+    padding-left: 40px;
+}
+
+.deliveryFlex .deliveryArea3 {
+    padding-left: 39px;
+}
+
+.choosePay {
+    margin-top: 16px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.choosePay span:first-child {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.choosePay label {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 19px;
+    color: #333333;
+}
+
+.choosePay p {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #666666;
+}
+
+.yourInfo div {
+    margin-top: 9px;
+}
+
+.yourInfo input {
+    display: block;
+}
+
+.yourInfo input {
+    width: 288px;
+    height: 27px;
+}
+
+.yourInfo label span {
+    color: #ee393e;
+}
+
+.yourInfo {
+    margin-top: 15px;
+    padding-bottom: 67px;
+}
+
+.yourInfo > span {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 15px;
+    display: inline-block;
+
+}
+
+.yourInfo .starLabel span {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 22px;
+    color: #ed1c24;
+}
+
+.yourInfo div input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.yourInfo button {
+    width: 191px;
+    height: 35px;
+    border: none;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #ff7200;
+    margin-top: 23px;
 }
 
 @media (max-width: 1199px) {
