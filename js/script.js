@@ -1,5 +1,26 @@
-window.onload = function () {
-    send.onclick = function () {
-        alert("Спасибо за доверие. Мы свяжемся с Вами максимально оперативно")
-    }
-};
+$(document).ready(function () {
+    $('.card').mouseover(function () {
+        $(this).find('.thumbnail').stop().fadeIn()
+    });
+    $('.card').mouseout(function () {
+        $(this).find('.thumbnail').stop().fadeOut()
+    });
+    var accord = $('.accordion');
+    accord.find('.title:not(.active)').siblings('div').slideUp();
+    accord.find('.title').on('click', function () {
+        $(this).siblings('div').stop().slideToggle(500);
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        }
+        else {
+            $(this).addClass('active');
+        }
+    });
+    $(".mainSlider").owlCarousel({
+        dots: true,
+        nav: false,
+        items: 1,
+        dotsContainer: "#customDots"
+    })
+});
+
