@@ -1510,10 +1510,116 @@ footer a[class*="icon"] {
     .container {
         width: 780px;
     }
+
+    .banner .sale {
+        width: 220px;
+        height: 260px;
+    }
+
+    .banner .slider {
+        width: 468px;
+        height: 264px;
+    }
+
+    .advantages {
+        width: 100%;
+        margin-bottom: 22px;
+    }
+
+    .subscribe {
+        width: 100%;
+    }
+
+    .subscribe .wrap {
+        display: inline-block;
+    }
+
+    .subscribe button {
+        display: inline-block;
+    }
+
+    .subscribe .wrap span {
+        display: inline-block;
+    }
+
+    .filter {
+        display: none;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 45px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 218px;
+    }
+
+    footer {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .footMenu {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footMenu .col {
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .footMenu a {
+        display: inline-block;
+        margin-right: 21px;
+    }
+
+    .footMenu ul li:last-child a {
+        margin-right: 0;
+    }
+
+    .footMenu li {
+        display: inline-block;
+    }
+
+    .contacts {
+        float: left;
+        width: 50%;
+    }
+
+    .contacts div span {
+        display: block;
+    }
+
+    .copyright {
+        float: right;
+        width: 50%;
+    }
+
 }
 
 @media (max-width: 767px) {
     .container {
         width: 100%;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .advSub {
+        display: none;
+    }
+
+    .filter {
+        display: none;
     }
 }
