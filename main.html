@@ -6,9 +6,13 @@
   <title>ЭКО</title>
   <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/selectric.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css"/>
   <link rel="stylesheet" href="css/style.css">
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.selectric.js"></script>
   <script type="text/javascript" src="js/owl.carousel.min.js"></script>
   <script type="text/javascript" src='js/script.js'></script>
 </head>
@@ -17,22 +21,21 @@
   <div class="container">
     <div class="table">
       <div class="left">
+        <span class="icon-user"></span>
         <a href="#" class="login">
-          <span class="icon-user"></span>
           Войти в личный кабинет
         </a>
         <ul class="menu">
           <li><a href="#">Оптовикам</a></li>
-          <li><a href="clients.html">Корпоративным клиентам</a></li>
+          <li><a href="#">Корпоративным клиентам</a></li>
           <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="news.html">О мастерской</a></li>
+          <li><a href="#">О мастерской</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </div>
-      <div class="logo">
-        <a href="main.html">
-          <img src="img/png/logo.png" alt="logo">
-        </a>
+      <div class="logo invisLink">
+        <img src="img/png/logo.png" alt="logo">
+        <a href="#">Главная страница</a>
       </div>
       <div class="right">
         <a href="tel:84956488456" class="phone">
@@ -88,7 +91,7 @@
           <input type="text" id="sub" placeholder="Введите ваш e-mail">
           <div class="wrap">
             <button id="send">Подписаться на рассылку</button>
-            <span>Обещаем НЕ спамить</span>
+            <span>Обещаем <br>НЕ спамить</span>
           </div>
         </form>
       </div>
@@ -187,6 +190,11 @@
           <span class="status discount">-10%</span>
         </div>
         <div class="card">
+          <div class="thumbnail">
+            <div class="pic active" style="background-image: url(img/jpg/card5.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card5.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card5.jpg)"></div>
+          </div>
           <div class="img" style="background-image: url(img/jpg/card5.jpg)"></div>
           <div class="content">
             <span class="title"></span>
@@ -200,6 +208,11 @@
           </div>
         </div>
         <div class="card">
+          <div class="thumbnail">
+            <div class="pic active" style="background-image: url(img/jpg/card6.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card6.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card6.jpg)"></div>
+          </div>
           <div class="img" style="background-image: url(img/jpg/card6.jpg)"></div>
           <div class="content">
             <span class="title">Набор</span>
@@ -213,6 +226,11 @@
           </div>
         </div>
         <div class="card">
+          <div class="thumbnail">
+            <div class="pic active" style="background-image: url(img/jpg/card7.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card7.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card7.jpg)"></div>
+          </div>
           <div class="img" style="background-image: url(img/jpg/card7.jpg)"></div>
           <div class="content">
             <span class="title">Набор</span>
@@ -227,6 +245,11 @@
           <span class="status new">New</span>
         </div>
         <div class="card">
+          <div class="thumbnail">
+            <div class="pic active" style="background-image: url(img/jpg/card8.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card8.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card8.jpg)"></div>
+          </div>
           <div class="img" style="background-image: url(img/jpg/card8.jpg)"></div>
           <div class="content">
             <span class="title">Набор весенний</span>
@@ -240,6 +263,11 @@
           </div>
         </div>
         <div class="card">
+          <div class="thumbnail">
+            <div class="pic active" style="background-image: url(img/jpg/card9.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card9.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card9.jpg)"></div>
+          </div>
           <div class="img" style="background-image: url(img/jpg/card9.jpg)"></div>
           <div class="content">
             <span class="title">Экочеловек</span>
@@ -253,6 +281,11 @@
           </div>
         </div>
         <div class="card">
+          <div class="thumbnail">
+            <div class="pic active" style="background-image: url(img/jpg/card10.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card10.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card10.jpg)"></div>
+          </div>
           <div class="img" style="background-image: url(img/jpg/card10.jpg)"></div>
           <div class="content">
             <span class="title">Экочеловек</span>
@@ -266,6 +299,11 @@
           </div>
         </div>
         <div class="card">
+          <div class="thumbnail">
+            <div class="pic active" style="background-image: url(img/jpg/card11.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card11.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card11.jpg)"></div>
+          </div>
           <div class="img" style="background-image: url(img/jpg/card11.jpg)"></div>
           <div class="content">
             <span class="title">Экочеловек</span>
@@ -279,6 +317,11 @@
           </div>
         </div>
         <div class="card">
+          <div class="thumbnail">
+            <div class="pic active" style="background-image: url(img/jpg/card12.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card12.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card12.jpg)"></div>
+          </div>
           <div class="img" style="background-image: url(img/jpg/card12.jpg)"></div>
           <div class="content">
             <span class="title">Экочеловек</span>
@@ -292,6 +335,11 @@
           </div>
         </div>
         <div class="card">
+          <div class="thumbnail">
+            <div class="pic active" style="background-image: url(img/jpg/card13.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card13.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card13.jpg)"></div>
+          </div>
           <div class="img" style="background-image: url(img/jpg/card13.jpg)"></div>
           <div class="content">
             <span class="title">Экочеловек</span>
@@ -305,6 +353,11 @@
           </div>
         </div>
         <div class="card">
+          <div class="thumbnail">
+            <div class="pic active" style="background-image: url(img/jpg/card14.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card14.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card14.jpg)"></div>
+          </div>
           <div class="img" style="background-image: url(img/jpg/card14.jpg)"></div>
           <div class="content">
             <span class="title">Экочеловек</span>
@@ -318,6 +371,11 @@
           </div>
         </div>
         <div class="card">
+          <div class="thumbnail">
+            <div class="pic active" style="background-image: url(img/jpg/card15.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card15.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card15.jpg)"></div>
+          </div>
           <div class="img" style="background-image: url(img/jpg/card15.jpg)"></div>
           <div class="content">
             <span class="title">Экочеловек</span>
@@ -331,6 +389,11 @@
           </div>
         </div>
         <div class="card">
+          <div class="thumbnail">
+            <div class="pic active" style="background-image: url(img/jpg/card16.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card16.jpg)"></div>
+            <div class="pic" style="background-image: url(img/jpg/card16.jpg)"></div>
+          </div>
           <div class="img" style="background-image: url(img/jpg/card16.jpg)"></div>
           <div class="content">
             <span class="title">Экочеловек</span>
@@ -353,14 +416,14 @@
         <div class="socialItem" style="background-image: url(img/jpg/soc3.jpg)"></div>
       </div>
     </div>
-    <div class="info">
+    <div class="info" id="tabs">
       <ul class="tabs">
-        <li><a href="#">Интернет-магазин керамических фигурок</a></li>
-        <li><a href="#">Керамические фигурки</a></li>
-        <li><a href="#">Подарки на новый год </a></li>
-        <li><a href="#">Подарок на день рождения</a></li>
+        <li><a href="#tabs-1">Интернет-магазин керамических фигурок</a></li>
+        <li><a href="#tabs-2">Керамические фигурки</a></li>
+        <li><a href="#tabs-3">Подарки на новый год </a></li>
+        <li><a href="#tabs-4">Подарок на день рождения</a></li>
       </ul>
-      <div class="content">
+      <div class="content" id="tabs-1">
         <div class="accordion">
           <span class="title active">Интернет магазин керамических фигурок — красота и удобство</span>
           <div>
@@ -406,8 +469,148 @@
           </div>
         </div>
       </div>
+      <div class="content" id="tabs-2">
+        <div class="accordion">
+          <span class="title active">Интернет магазин керамических фигурок — красота и удобство</span>
+          <div>
+            <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+              оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+              интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+              магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+              беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+              впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+              многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+              декора интерьера. </p>
+            <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+              интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+              гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+              являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+              настроением. </p>
+            <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+              оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+              используются натуральные, качественные материалы, создающие идеальные условия для
+              выращивания травы и различных цветов.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <span class="title">Интернет магазин керамических фигурок — сочетание простоты и удобства</span>
+          <div>
+            <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+              оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+              интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+              магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+              беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+              впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+              многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+              декора интерьера. </p>
+            <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+              интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+              гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+              являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+              настроением. </p>
+            <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+              оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+              используются натуральные, качественные материалы, создающие идеальные условия для
+              выращивания травы и различных цветов.</p>
+          </div>
+        </div>
+      </div>
+      <div class="content" id="tabs-3">
+        <div class="accordion">
+          <span class="title active">Интернет магазин керамических фигурок — красота и удобство</span>
+          <div>
+            <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+              оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+              интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+              магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+              беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+              впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+              многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+              декора интерьера. </p>
+            <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+              интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+              гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+              являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+              настроением. </p>
+            <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+              оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+              используются натуральные, качественные материалы, создающие идеальные условия для
+              выращивания травы и различных цветов.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <span class="title">Интернет магазин керамических фигурок — сочетание простоты и удобства</span>
+          <div>
+            <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+              оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+              интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+              магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+              беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+              впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+              многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+              декора интерьера. </p>
+            <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+              интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+              гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+              являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+              настроением. </p>
+            <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+              оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+              используются натуральные, качественные материалы, создающие идеальные условия для
+              выращивания травы и различных цветов.</p>
+          </div>
+        </div>
+      </div>
+      <div class="content" id="tabs-4">
+        <div class="accordion">
+          <span class="title active">Интернет магазин керамических фигурок — красота и удобство</span>
+          <div>
+            <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+              оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+              интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+              магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+              беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+              впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+              многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+              декора интерьера. </p>
+            <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+              интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+              гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+              являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+              настроением. </p>
+            <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+              оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+              используются натуральные, качественные материалы, создающие идеальные условия для
+              выращивания травы и различных цветов.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <span class="title">Интернет магазин керамических фигурок — сочетание простоты и удобства</span>
+          <div>
+            <p>Интернет магазин керамических фигурок может обеспечить на выбор разнообразие интересных и
+              оригинальных травянчиков – настоящий подарок для тех, кому важна красота и гармония в
+              интерьере, дополняясь экологической чистотой и долговечностью первозданной красоты. Интернет
+              магазин керамических фигурок предлагает различные виды травянчиков, которые станут
+              беспроигрышным подарком для близких, родных, коллег или друзей. Прекрасная возможность
+              впечатлить своих знакомых оригинальным презентом. В каталоге сайта могут быть подобраны
+              многофункциональные и надежные экочеловечки, которые явно не похожи на другие элементы
+              декора интерьера. </p>
+            <p>Человечки травянчики представляют собой поистине оригинальное украшение интерьера – всегда
+              интересно играть, рассматривать, выращивать интересные цветы и траву, с созданием эффектных
+              гримас, образов и причесок с помощью подстригания травы и изображений маркером. Травянчики
+              являются экологически чистыми и гигиеничными изделиями, дополняя интерьер веселым и забавным
+              настроением. </p>
+            <p>Модные травянчики дарят приятные эмоции и ощущение доброты. Современный травянчик – удобный и
+              оригинальный аксессуар, в котором удобно хранятся разные мелочи. Для изготовления
+              используются натуральные, качественные материалы, создающие идеальные условия для
+              выращивания травы и различных цветов.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
 </div>
 <footer>
   <div class="container">
@@ -443,7 +646,7 @@
         <span>© 2011-2014 Экочеловечки</span>
         <span>Все права защищены</span>
         <span>Все цены указаны в рублях</span>
-        <span><a href="">Разработка «Биат»</a></span>
+        <span>Разработка <a href="#">«Биат»</a></span>
       </div>
     </div>
   </div>

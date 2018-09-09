@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('select').selectric();
     $('.card').mouseover(function () {
         $(this).find('.thumbnail').stop().fadeIn()
     });
@@ -21,6 +22,10 @@ $(document).ready(function () {
         nav: false,
         items: 1,
         dotsContainer: "#customDots"
-    })
+    });
+
+    $("#tabs").tabs({
+        active: 0
+    });
 });
 

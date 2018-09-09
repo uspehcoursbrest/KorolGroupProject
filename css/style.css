@@ -42,6 +42,7 @@ a{
 }
 
 header {
+    padding-top: 20px;
     padding-bottom: 18px;
 }
 
@@ -57,6 +58,10 @@ header .left {
     text-align: left;
 }
 
+header .left .menu {
+    margin-top: 35px;
+}
+
 header .logo {
     display: table-cell;
     width: 33.3333%;
@@ -64,11 +69,37 @@ header .logo {
     text-align: center;
 }
 
+.invisLink {
+    position: relative;
+    z-index: 1;
+}
+
+.invisLink > a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+}
+
 header .right {
     display: table-cell;
     width: 33.3333%;
     vertical-align: top;
     text-align: right;
+}
+
+header .right .timing {
+    margin-top: 15px;
+}
+
+header .right a:last-child {
+    margin-top: 20px;
 }
 
 header .login {
@@ -93,7 +124,7 @@ header .menu a:hover {
 
 .menu li {
     display: inline-block;
-    margin-right: 18px;
+    margin-right: 19px;
 }
 
 header .phone {
@@ -312,6 +343,10 @@ header .phone [class*="icon"] {
     margin-bottom: 14px;
 }
 
+input::placeholder {
+    padding-left: 12px;
+}
+
 .subscribe button {
     font-size: 13px;
     line-height: 37px;
@@ -335,15 +370,13 @@ header .phone [class*="icon"] {
 
 .subScribe .wrap {
     width: 100%;
-    display: table;
+    display: flex;
 }
 
 .subscribe .wrap span {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
-    display: table-cell;
     vertical-align: middle;
-    padding-left: 25px;
 }
 
 .catalog {
@@ -466,6 +499,7 @@ header .phone [class*="icon"] {
     color: #666666;
     display: inline-block;
     vertical-align: top;
+    margin-right: 10px;
 }
 
 .card .content {
@@ -632,6 +666,11 @@ footer a {
     display: table;
     text-decoration: none;
     color: #ffffff;
+    opacity: 1;
+}
+
+footer a:hover {
+    opacity: 0.7;
 }
 
 footer a[class*="icon"] {
@@ -926,6 +965,35 @@ footer a[class*="icon"] {
     animation: circle 2.2s infinite ease-in-out;
 }
 
+.info.ui-tabs {
+    padding: 0;
+}
+
+.info.ui-tabs .ui-tabs-nav {
+    padding: 0;
+}
+
+.info.ui-tabs .ui-tabs-nav li {
+    margin: 0;
+}
+
+.info.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    padding: 0;
+    margin: 0;
+}
+
+.info.ui-tabs .ui-tabs-panel {
+    padding: 0;
+}
+
+.info .tabs li.ui-tabs-active a,
+.info .tabs li a:hover {
+    border: none;
+    background-color: #f2fff7;
+    color: #1c9847;
+    cursor: pointer;
+}
+
 @keyframes circleFill {
     0% {
         -webkit-transform: scale(0.5);
@@ -1171,6 +1239,7 @@ footer a[class*="icon"] {
 }
 
 .clientWrap .addInf textarea{
+    width: 283px;
     height: 124px;
     margin-bottom: 22px;
 }
@@ -1225,6 +1294,57 @@ footer a[class*="icon"] {
 
 .clientWrap .right p:last-child {
     padding-bottom: 18px;
+}
+
+.selectBL {
+    width: 290px;
+}
+
+.selectBL .selectric {
+    width: 100%;
+    height: 28px;
+    background-color: #ffffff;
+    border: 1px solid #d6d6d6;
+}
+
+.selectBL .selectric .label {
+    font-size: 13px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.selectBL .selectric .button {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+    border-top: 7px solid #00a48c;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    margin-top: -2px;
+    background-color: transparent;
+}
+
+.selectBL .selectric .button::after {
+    display: none;
+}
+
+.selectBL .selectric-items {
+    border: 1px solid #d6d6d6;
+}
+
+.selectBL .selectric-items li {
+    padding: 0;
+    padding-left: 10px;
+    font-size: 13px;
+    line-height: 26px;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.selectBL .selectric-items li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .clientWrap .right button {
@@ -1549,6 +1669,18 @@ footer a[class*="icon"] {
     text-align: center;
     background-color: #ff7200;
     margin-top: 23px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.yourInfo button:hover {
+    border: 1px solid #ff7100;
+    background-color: #fff;
+    color: #ff7100;
 }
 
 @media (max-width: 1199px) {

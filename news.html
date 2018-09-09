@@ -2,12 +2,16 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>ЭКО</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭКО</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/selectric.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.selectric.js"></script>
     <script type="text/javascript" src='js/script.js'></script>
 </head>
 <body>
@@ -15,22 +19,21 @@
     <div class="container">
         <div class="table">
             <div class="left">
+                <span class="icon-user"></span>
                 <a href="#" class="login">
-                    <span class="icon-user"></span>
                     Войти в личный кабинет
                 </a>
                 <ul class="menu">
                     <li><a href="#">Оптовикам</a></li>
-                    <li><a href="clients.html">Корпоративным клиентам</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
                     <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="news.html">О мастерской</a></li>
+                    <li><a href="#">О мастерской</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
-            <div class="logo">
-                <a href="main.html">
-                    <img src="img/png/logo.png" alt="logo">
-                </a>
+            <div class="logo invisLink">
+                <img src="img/png/logo.png" alt="logo">
+                <a href="#">Главная страница</a>
             </div>
             <div class="right">
                 <a href="tel:84956488456" class="phone">
@@ -47,8 +50,8 @@
 <div class="container">
     <div class="content">
         <ul class="breadcrumbs">
-            <li><a href="main.html">Главная / </a></li>
-            <li><a href="news.html">Новости / </a></li>
+            <li><a href="#">Главная / </a></li>
+            <li><a href="#">Новости / </a></li>
             <li>Заголовок новости №1</li>
         </ul>
         <div class="newsWrap">
@@ -99,7 +102,7 @@
                 <span>© 2011-2014 Экочеловечки</span>
                 <span>Все права защищены</span>
                 <span>Все цены указаны в рублях</span>
-                <span><a href="">Разработка «Биат»</a></span>
+                <span>Разработка <a href="#">«Биат»</a></span>
             </div>
         </div>
     </div>
